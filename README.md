@@ -16,5 +16,5 @@ Jenkins will put all configuration and workspaces in /var/jenkins_home. This sho
 
 Below is an example docker run command to get Jenkins running. 
 
-docker run -d -e "JENKINS_OPTS=--prefix=/jenkins" -v /uaccess/KATTS/Internal/UAF/tools/jenkins/jenkins_home:/var/jenkins_home easksd/jenkins
+docker run -d --name="ksd-tools-jenkins" -e "JENKINS_OPTS=--prefix=/jenkins" -v /uaccess/KATTS/Internal/UAF/tools/jenkins/jenkins_home:/var/jenkins_home easksd/jenkins
 
