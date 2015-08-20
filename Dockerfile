@@ -8,4 +8,3 @@ RUN apt-get update && \
 
 # Set the timezone
 RUN ln -sf /usr/share/zoneinfo/America/Phoenix /etc/localtime
-RUN export JAVA_OPTS="$JAVA_OPTS -Duser.timezone=America/Phoenix"
