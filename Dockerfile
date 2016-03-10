@@ -33,6 +33,5 @@ RUN mkdir $LIQUIBASE_HOME/lib
 
 # put liquibase and ojdbc jar files in lib dir
 COPY classes/liquibase-3.3.5.jar $LIQUIBASE_HOME/lib/
-COPY $JENKINS_CONFIG_DIRECTORY/ojdbc6.jar $LIQUIBASE_HOME/lib/
 
 ENTRYPOINT ["/bin/tini", "--", "/root/bin/run.sh"]
