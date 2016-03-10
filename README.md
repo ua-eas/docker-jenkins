@@ -1,6 +1,6 @@
 # Description
 
-This is the Jenkins Docker repository for the kuali tech team at UofA. This is where we instal any additional plugins or tools used by Jenkins for the build process.
+This is the Jenkins Docker repository for the kuali tech team at UofA. This is where we install any additional plugins or tools used by Jenkins for the build process.
 
 ## Docker Name
 
@@ -22,5 +22,6 @@ Below is an example docker run command to get Jenkins running.
     -v /uaccess/KATTS/Internal/UAF/tools/jenkins/jenkins_home:/var/jenkins_home \
     -v /kuali-configs/security/tools/jenkins:/security \
     -v /transaction/data/fs:/transactional \
+    -v /kuali-configs/configuration/toolsbox/jenkins/resources:/configuration:ro \
     easksd/jenkins
 

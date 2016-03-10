@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script copies a bunch of files from /oracle_installers into various 
+# This script copies a bunch of files from ORA_SOURCE_DIR (defined in Dockerfile) into various 
 # places required to run the sqlplus command line tool for Oracle DB access.
 #
 if [ ! -d $ORA_BASE_DIR ] 
